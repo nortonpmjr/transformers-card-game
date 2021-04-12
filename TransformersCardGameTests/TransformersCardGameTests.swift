@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import TransformersCardGAme
+@testable import TransformersCardGame
 
 class TransformersCardGAmeTests: XCTestCase {
 
