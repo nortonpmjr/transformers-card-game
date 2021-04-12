@@ -1,14 +1,7 @@
-//
-//  TransformersCardGAmeTests.swift
-//  TransformersCardGAmeTests
-//
-//  Created by Norton Pigozzo Martins Junior on 2021-04-12.
-//
-
 import XCTest
 @testable import TransformersCardGame
 
-class TransformersCardGAmeTests: XCTestCase {
+class TransformersCardGameTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
