@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBF3F6AA2624D5EC00FCB292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */; };
+		FBF3F6AE2624D5EC00FCB292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3F6AD2624D5EC00FCB292 /* ViewController.swift */; };
+		FBF3F6B12624D5EC00FCB292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6AF2624D5EC00FCB292 /* Main.storyboard */; };
+		FBF3F6B32624D5ED00FCB292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6B22624D5ED00FCB292 /* Assets.xcassets */; };
+		FBF3F6B62624D5ED00FCB292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6B42624D5ED00FCB292 /* LaunchScreen.storyboard */; };
+		FBF3F6C12624D5ED00FCB292 /* TransformersCardGAmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3F6C02624D5ED00FCB292 /* TransformersCardGAmeTests.swift */; };
+		FBF3F6CC2624D5ED00FCB292 /* TransformersCardGAmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3F6CB2624D5ED00FCB292 /* TransformersCardGAmeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBF3F6BD2624D5ED00FCB292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF3F69E2624D5EC00FCB292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF3F6A52624D5EC00FCB292;
+			remoteInfo = TransformersCardGAme;
+		};
+		FBF3F6C82624D5ED00FCB292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF3F69E2624D5EC00FCB292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF3F6A52624D5EC00FCB292;
+			remoteInfo = TransformersCardGAme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBF3F6A62624D5EC00FCB292 /* TransformersCardGAme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformersCardGAme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBF3F6AD2624D5EC00FCB292 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBF3F6B02624D5EC00FCB292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBF3F6B22624D5ED00FCB292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF3F6B52624D5ED00FCB292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBF3F6B72624D5ED00FCB292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF3F6BC2624D5ED00FCB292 /* TransformersCardGAmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersCardGAmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF3F6C02624D5ED00FCB292 /* TransformersCardGAmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersCardGAmeTests.swift; sourceTree = "<group>"; };
+		FBF3F6C22624D5ED00FCB292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF3F6C72624D5ED00FCB292 /* TransformersCardGAmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersCardGAmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF3F6CB2624D5ED00FCB292 /* TransformersCardGAmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersCardGAmeUITests.swift; sourceTree = "<group>"; };
+		FBF3F6CD2624D5ED00FCB292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF3F6A32624D5EC00FCB292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF3F6B92624D5ED00FCB292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF3F6C42624D5ED00FCB292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBF3F69D2624D5EC00FCB292 = {
+			isa = PBXGroup;
+			children = (
+				FBF3F6A82624D5EC00FCB292 /* TransformersCardGAme */,
+				FBF3F6BF2624D5ED00FCB292 /* TransformersCardGAmeTests */,
+				FBF3F6CA2624D5ED00FCB292 /* TransformersCardGAmeUITests */,
+				FBF3F6A72624D5EC00FCB292 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF3F6A72624D5EC00FCB292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3F6A62624D5EC00FCB292 /* TransformersCardGAme.app */,
+				FBF3F6BC2624D5ED00FCB292 /* TransformersCardGAmeTests.xctest */,
+				FBF3F6C72624D5ED00FCB292 /* TransformersCardGAmeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF3F6A82624D5EC00FCB292 /* TransformersCardGAme */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */,
+				FBF3F6AD2624D5EC00FCB292 /* ViewController.swift */,
+				FBF3F6AF2624D5EC00FCB292 /* Main.storyboard */,
+				FBF3F6B22624D5ED00FCB292 /* Assets.xcassets */,
+				FBF3F6B42624D5ED00FCB292 /* LaunchScreen.storyboard */,
+				FBF3F6B72624D5ED00FCB292 /* Info.plist */,
+			);
+			path = TransformersCardGAme;
+			sourceTree = "<group>";
+		};
+		FBF3F6BF2624D5ED00FCB292 /* TransformersCardGAmeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3F6C02624D5ED00FCB292 /* TransformersCardGAmeTests.swift */,
+				FBF3F6C22624D5ED00FCB292 /* Info.plist */,
+			);
+			path = TransformersCardGAmeTests;
+			sourceTree = "<group>";
+		};
+		FBF3F6CA2624D5ED00FCB292 /* TransformersCardGAmeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3F6CB2624D5ED00FCB292 /* TransformersCardGAmeUITests.swift */,
+				FBF3F6CD2624D5ED00FCB292 /* Info.plist */,
+			);
+			path = TransformersCardGAmeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF3F6A52624D5EC00FCB292 /* TransformersCardGAme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF3F6D02624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGAme" */;
+			buildPhases = (
+				FBF3F6A22624D5EC00FCB292 /* Sources */,
+				FBF3F6A32624D5EC00FCB292 /* Frameworks */,
+				FBF3F6A42624D5EC00FCB292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransformersCardGAme;
+			productName = TransformersCardGAme;
+			productReference = FBF3F6A62624D5EC00FCB292 /* TransformersCardGAme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF3F6BB2624D5ED00FCB292 /* TransformersCardGAmeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF3F6D32624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGAmeTests" */;
+			buildPhases = (
+				FBF3F6B82624D5ED00FCB292 /* Sources */,
+				FBF3F6B92624D5ED00FCB292 /* Frameworks */,
+				FBF3F6BA2624D5ED00FCB292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF3F6BE2624D5ED00FCB292 /* PBXTargetDependency */,
+			);
+			name = TransformersCardGAmeTests;
+			productName = TransformersCardGAmeTests;
+			productReference = FBF3F6BC2624D5ED00FCB292 /* TransformersCardGAmeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBF3F6C62624D5ED00FCB292 /* TransformersCardGAmeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF3F6D62624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGAmeUITests" */;
+			buildPhases = (
+				FBF3F6C32624D5ED00FCB292 /* Sources */,
+				FBF3F6C42624D5ED00FCB292 /* Frameworks */,
+				FBF3F6C52624D5ED00FCB292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF3F6C92624D5ED00FCB292 /* PBXTargetDependency */,
+			);
+			name = TransformersCardGAmeUITests;
+			productName = TransformersCardGAmeUITests;
+			productReference = FBF3F6C72624D5ED00FCB292 /* TransformersCardGAmeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF3F69E2624D5EC00FCB292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FBF3F6A52624D5EC00FCB292 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FBF3F6BB2624D5ED00FCB292 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FBF3F6A52624D5EC00FCB292;
+					};
+					FBF3F6C62624D5ED00FCB292 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FBF3F6A52624D5EC00FCB292;
+					};
+				};
+			};
+			buildConfigurationList = FBF3F6A12624D5EC00FCB292 /* Build configuration list for PBXProject "TransformersCardGAme" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBF3F69D2624D5EC00FCB292;
+			productRefGroup = FBF3F6A72624D5EC00FCB292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF3F6A52624D5EC00FCB292 /* TransformersCardGAme */,
+				FBF3F6BB2624D5ED00FCB292 /* TransformersCardGAmeTests */,
+				FBF3F6C62624D5ED00FCB292 /* TransformersCardGAmeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF3F6A42624D5EC00FCB292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF3F6B62624D5ED00FCB292 /* LaunchScreen.storyboard in Resources */,
+				FBF3F6B32624D5ED00FCB292 /* Assets.xcassets in Resources */,
+				FBF3F6B12624D5EC00FCB292 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF3F6BA2624D5ED00FCB292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF3F6C52624D5ED00FCB292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF3F6A22624D5EC00FCB292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF3F6AE2624D5EC00FCB292 /* ViewController.swift in Sources */,
+				FBF3F6AA2624D5EC00FCB292 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF3F6B82624D5ED00FCB292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF3F6C12624D5ED00FCB292 /* TransformersCardGAmeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF3F6C32624D5ED00FCB292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF3F6CC2624D5ED00FCB292 /* TransformersCardGAmeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBF3F6BE2624D5ED00FCB292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF3F6A52624D5EC00FCB292 /* TransformersCardGAme */;
+			targetProxy = FBF3F6BD2624D5ED00FCB292 /* PBXContainerItemProxy */;
+		};
+		FBF3F6C92624D5ED00FCB292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF3F6A52624D5EC00FCB292 /* TransformersCardGAme */;
+			targetProxy = FBF3F6C82624D5ED00FCB292 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBF3F6AF2624D5EC00FCB292 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF3F6B02624D5EC00FCB292 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBF3F6B42624D5ED00FCB292 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF3F6B52624D5ED00FCB292 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF3F6CE2624D5ED00FCB292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBF3F6CF2624D5ED00FCB292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF3F6D12624D5ED00FCB292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27F3ZKLUK9;
+				INFOPLIST_FILE = TransformersCardGAme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NortonPigozzo.TransformersCardGAme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBF3F6D22624D5ED00FCB292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27F3ZKLUK9;
+				INFOPLIST_FILE = TransformersCardGAme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NortonPigozzo.TransformersCardGAme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBF3F6D42624D5ED00FCB292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27F3ZKLUK9;
+				INFOPLIST_FILE = TransformersCardGAmeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NortonPigozzo.TransformersCardGAmeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransformersCardGAme.app/TransformersCardGAme";
+			};
+			name = Debug;
+		};
+		FBF3F6D52624D5ED00FCB292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27F3ZKLUK9;
+				INFOPLIST_FILE = TransformersCardGAmeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NortonPigozzo.TransformersCardGAmeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransformersCardGAme.app/TransformersCardGAme";
+			};
+			name = Release;
+		};
+		FBF3F6D72624D5ED00FCB292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27F3ZKLUK9;
+				INFOPLIST_FILE = TransformersCardGAmeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NortonPigozzo.TransformersCardGAmeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransformersCardGAme;
+			};
+			name = Debug;
+		};
+		FBF3F6D82624D5ED00FCB292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27F3ZKLUK9;
+				INFOPLIST_FILE = TransformersCardGAmeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NortonPigozzo.TransformersCardGAmeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransformersCardGAme;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF3F6A12624D5EC00FCB292 /* Build configuration list for PBXProject "TransformersCardGAme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF3F6CE2624D5ED00FCB292 /* Debug */,
+				FBF3F6CF2624D5ED00FCB292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF3F6D02624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGAme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF3F6D12624D5ED00FCB292 /* Debug */,
+				FBF3F6D22624D5ED00FCB292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF3F6D32624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGAmeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF3F6D42624D5ED00FCB292 /* Debug */,
+				FBF3F6D52624D5ED00FCB292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF3F6D62624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGAmeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF3F6D72624D5ED00FCB292 /* Debug */,
+				FBF3F6D82624D5ED00FCB292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF3F69E2624D5EC00FCB292 /* Project object */;
+}
