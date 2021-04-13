@@ -1,6 +1,6 @@
 import Foundation
 
-static class UserPreferences {
+class UserPreferences {
     static func addKey(token: String) {
         UserDefaults.standard.set(token, forKey: "JWT")
     }
