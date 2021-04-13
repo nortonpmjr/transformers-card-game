@@ -42,6 +42,7 @@ extension NetworkService: TargetType {
         switch self {
         case .getToken:
             return .requestPlain
+//        case .createTransformer:
         default:
             return .requestPlain
         }

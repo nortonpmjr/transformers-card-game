@@ -9,4 +9,5 @@ workspace 'TransformersCardGame'
 target 'TransformersCardGame' do
     pod 'Alamofire'
     pod 'Moya'
+    pod 'SnapKit'
 end
