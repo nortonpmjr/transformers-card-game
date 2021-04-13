@@ -11,6 +11,7 @@
 		FBE611852624E40800336620 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611842624E40800336620 /* UserPreferences.swift */; };
 		FBE6119D2624EBE600336620 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6119C2624EBE600336620 /* HomeView.swift */; };
 		FBE611AB2624ED7900336620 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611AA2624ED7900336620 /* UIView+Ext.swift */; };
+		FBE611B32625FE0100336620 /* TransformerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611B22625FE0100336620 /* TransformerModel.swift */; };
 		FBF3F6AA2624D5EC00FCB292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */; };
 		FBF3F6B12624D5EC00FCB292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6AF2624D5EC00FCB292 /* Main.storyboard */; };
 		FBF3F6B32624D5ED00FCB292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6B22624D5ED00FCB292 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		FBE611842624E40800336620 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		FBE6119C2624EBE600336620 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBE611AA2624ED7900336620 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		FBE611B22625FE0100336620 /* TransformerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerModel.swift; sourceTree = "<group>"; };
 		FBF3F6A62624D5EC00FCB292 /* TransformersCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformersCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF3F6B02624D5EC00FCB292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		FBF3F70A2624D9C600FCB292 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBE611B22625FE0100336620 /* TransformerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF3F6E82624D74B00FCB292 /* AppCoordinator.swift in Sources */,
+				FBE611B32625FE0100336620 /* TransformerModel.swift in Sources */,
 				FBE611852624E40800336620 /* UserPreferences.swift in Sources */,
 				FBF3F6AA2624D5EC00FCB292 /* AppDelegate.swift in Sources */,
 				FBF3F71B2624DD3800FCB292 /* NetworkService.swift in Sources */,

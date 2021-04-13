@@ -7,11 +7,13 @@ PODS:
     - Result (~> 4.1)
   - Result (4.1.0)
   - SnapKit (5.0.0)
+  - SwiftLint (0.34.0)
 
 DEPENDENCIES:
   - Alamofire
   - Moya
   - SnapKit
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -19,13 +21,15 @@ SPEC REPOS:
     - Moya
     - Result
     - SnapKit
+    - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: 11862530adfabf3ebc3eba63cfea78e5ad353d3b
+PODFILE CHECKSUM: d147adde2f2b84c5bbb23f8c5bf26ca1cbd24524
 
 COCOAPODS: 1.10.1

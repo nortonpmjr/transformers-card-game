@@ -1,11 +1,13 @@
 import Foundation
 
 class UserPreferences {
+    static var preferences = UserDefaults.standard
+
     static func addKey(token: String) {
-        UserDefaults.standard.set(token, forKey: "JWT")
+        preferences.set(token, forKey: "JWT")
     }
 
-    static func getKey() {
-        UserDefaults.standard.value(forKey: "JWT")
+    static func getKey() -> String {
+        return preferences.value(forKey: "JWT") as! String
     }
 }

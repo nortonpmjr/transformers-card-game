@@ -10,4 +10,5 @@ target 'TransformersCardGame' do
     pod 'Alamofire'
     pod 'Moya'
     pod 'SnapKit'
+    pod 'SwiftLint'
 end

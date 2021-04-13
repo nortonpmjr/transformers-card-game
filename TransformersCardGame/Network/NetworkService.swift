@@ -2,10 +2,10 @@ import Moya
 
 enum NetworkService {
     case getToken
-    case createTransformer
+    case createTransformer(transformer: TransformerModel)
     case getTransformer
-    case updateTransformer
-    case deleteTransformer
+    case updateTransformer(transformer: TransformerModel)
+    case deleteTransformer(transformer: TransformerModel)
 }
 
 extension NetworkService: TargetType {
@@ -17,7 +17,7 @@ extension NetworkService: TargetType {
         case .getToken:
             return "/allspark"
         default:
-            return "transformers"
+            return "/transformers"
         }
     }
 
@@ -42,14 +42,25 @@ extension NetworkService: TargetType {
         switch self {
         case .getToken:
             return .requestPlain
-//        case .createTransformer:
+        case let .createTransformer(transformer):
+            return .requestParameters(parameters: transformer.dictionary, encoding: JSONEncoding.default)
+        case let .updateTransformer(transformer):
+            var parameters: [String: Any] = transformer.dictionary
+            parameters["id"] = transformer.id
+            return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
         default:
             return .requestPlain
         }
     }
-
     var headers: [String : String]? {
-        return ["Authorization": "Bearer",
-                "Content-type": "application/json"]
+
+        switch self {
+        case .getToken:
+            return ["Content-Type": "application/json"]
+        default:
+            let token = UserPreferences.getKey()
+            return ["Authorization": "Bearer \(token)",
+                    "Content-Type": "application/json"]
+        }
     }
 }

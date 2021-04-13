@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
                     let token = try response.mapString()
                     self.contentView.JWTValueLabel.text = token
                     UserPreferences.addKey(token: token)
+                    self.createTransformer()
                 }
                 catch let error {
                     debugPrint(error)
@@ -38,6 +39,25 @@ class HomeViewController: UIViewController {
             case let .failure(error):
                 debugPrint(error)
             }
+        }
+    }
+
+    func createTransformer() {
+        let transformer: TransformerModel = TransformerModel(name: "Megatron", strength: 10, intelligence: 10, speed: 4, endurance: 8, rank: 10, courage: 9, firepower: 10, skill: 9, team: TransformerTeam.Decepticon)
+        provider.request(.createTransformer(transformer: transformer)) { result in
+            switch result {
+            case let .success(response):
+                do {
+                    let t = try response.mapString()
+                    debugPrint(t)
+                }
+                catch let error {
+                    debugPrint(error)
+                }
+            case let .failure(failure):
+                debugPrint(failure)
+            }
+
         }
     }
 }
