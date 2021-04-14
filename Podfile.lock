@@ -1,35 +1,82 @@
 PODS:
   - Alamofire (4.8.2)
+  - Cuckoo (1.1.1)
+  - iOSSnapshotTestCase (6.1.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.1.0)
+  - iOSSnapshotTestCase/Core (6.1.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.1.0):
+    - iOSSnapshotTestCase/Core
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - Nimble (8.0.2)
+  - Nimble-Snapshots (7.1.0):
+    - Nimble-Snapshots/Core (= 7.1.0)
+  - Nimble-Snapshots/Core (7.1.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
+    - OHHTTPStubs/Default
+  - Quick (2.1.0)
   - Result (4.1.0)
   - SnapKit (5.0.0)
+  - SnapshotTesting (1.5.0)
   - SwiftLint (0.34.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Cuckoo
   - Moya
+  - Nimble
+  - Nimble-Snapshots
+  - OHHTTPStubs/Swift
+  - Quick
   - SnapKit
+  - SnapshotTesting
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Cuckoo
+    - iOSSnapshotTestCase
     - Moya
+    - Nimble
+    - Nimble-Snapshots
+    - OHHTTPStubs
+    - Quick
     - Result
     - SnapKit
+    - SnapshotTesting
     - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Cuckoo: 6193c50e46403cc9417aa98752671a2a5ae6f3a6
+  iOSSnapshotTestCase: 30d540b0c8feb9d7f8ff97acc25a3804b48ee264
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Nimble-Snapshots: 2ec985281eef0eb9fc69a469deee851363a50d0e
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: d147adde2f2b84c5bbb23f8c5bf26ca1cbd24524
+PODFILE CHECKSUM: c8f32c760ae15e54f5ae8cfe3aeac30b72a3e693
 
 COCOAPODS: 1.10.1

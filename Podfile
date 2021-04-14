@@ -11,4 +11,15 @@ target 'TransformersCardGame' do
     pod 'Moya'
     pod 'SnapKit'
     pod 'SwiftLint'
+
+
+    target 'TransformersCardGameTests' do
+        pod 'Cuckoo'
+        pod 'SnapshotTesting'
+        pod 'Quick'
+        pod 'Nimble'
+        pod 'Nimble-Snapshots'
+        pod 'OHHTTPStubs/Swift'
+    end
+
 end
