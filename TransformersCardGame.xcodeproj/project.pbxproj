@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1B23FFCB2648E33259F6FA90 /* Pods_TransformersCardGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ECE3FA47763EF7C89A1472 /* Pods_TransformersCardGame.framework */; };
+		BFB3A2F91052505BE3BCABF6 /* Pods_TransformersCardGame_TransformersCardGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765BAE6CD27AFC52B031BAA0 /* Pods_TransformersCardGame_TransformersCardGameTests.framework */; };
 		FBE611852624E40800336620 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611842624E40800336620 /* UserPreferences.swift */; };
 		FBE6119D2624EBE600336620 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6119C2624EBE600336620 /* HomeView.swift */; };
 		FBE611AB2624ED7900336620 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611AA2624ED7900336620 /* UIView+Ext.swift */; };
 		FBE611B32625FE0100336620 /* TransformerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611B22625FE0100336620 /* TransformerModel.swift */; };
+		FBE611CA26260BD300336620 /* TransformerModel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611C926260BD300336620 /* TransformerModel+Ext.swift */; };
+		FBE611CF2626368500336620 /* TransformerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611CE2626368500336620 /* TransformerRepository.swift */; };
+		FBE611D42627553D00336620 /* HomeViewModelDelegateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611D32627553C00336620 /* HomeViewModelDelegateType.swift */; };
+		FBE611D92627633800336620 /* TransformerCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611D82627633800336620 /* TransformerCreationView.swift */; };
+		FBE611DF2627650A00336620 /* TCGInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611DE2627650A00336620 /* TCGInputField.swift */; };
 		FBF3F6AA2624D5EC00FCB292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */; };
 		FBF3F6B12624D5EC00FCB292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6AF2624D5EC00FCB292 /* Main.storyboard */; };
 		FBF3F6B32624D5ED00FCB292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF3F6B22624D5ED00FCB292 /* Assets.xcassets */; };
@@ -44,13 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CFFB07A724B3B06ADEFB64C /* Pods-TransformersCardGame-TransformersCardGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersCardGame-TransformersCardGameTests.release.xcconfig"; path = "Target Support Files/Pods-TransformersCardGame-TransformersCardGameTests/Pods-TransformersCardGame-TransformersCardGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		765BAE6CD27AFC52B031BAA0 /* Pods_TransformersCardGame_TransformersCardGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformersCardGame_TransformersCardGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780AB62F2310A008C94E4111 /* Pods-TransformersCardGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersCardGame.release.xcconfig"; path = "Target Support Files/Pods-TransformersCardGame/Pods-TransformersCardGame.release.xcconfig"; sourceTree = "<group>"; };
+		B0A1CCDF1E16F4246A1E48AE /* Pods-TransformersCardGame-TransformersCardGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersCardGame-TransformersCardGameTests.debug.xcconfig"; path = "Target Support Files/Pods-TransformersCardGame-TransformersCardGameTests/Pods-TransformersCardGame-TransformersCardGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDD99E37FBF7A7E785D708C3 /* Pods-TransformersCardGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersCardGame.debug.xcconfig"; path = "Target Support Files/Pods-TransformersCardGame/Pods-TransformersCardGame.debug.xcconfig"; sourceTree = "<group>"; };
 		D1ECE3FA47763EF7C89A1472 /* Pods_TransformersCardGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformersCardGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE611842624E40800336620 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		FBE6119C2624EBE600336620 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBE611AA2624ED7900336620 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		FBE611B22625FE0100336620 /* TransformerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerModel.swift; sourceTree = "<group>"; };
+		FBE611C926260BD300336620 /* TransformerModel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformerModel+Ext.swift"; sourceTree = "<group>"; };
+		FBE611CE2626368500336620 /* TransformerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerRepository.swift; sourceTree = "<group>"; };
+		FBE611D32627553C00336620 /* HomeViewModelDelegateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegateType.swift; sourceTree = "<group>"; };
+		FBE611D82627633800336620 /* TransformerCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationView.swift; sourceTree = "<group>"; };
+		FBE611DE2627650A00336620 /* TCGInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGInputField.swift; sourceTree = "<group>"; };
 		FBF3F6A62624D5EC00FCB292 /* TransformersCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformersCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF3F6A92624D5EC00FCB292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF3F6B02624D5EC00FCB292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB3A2F91052505BE3BCABF6 /* Pods_TransformersCardGame_TransformersCardGameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D1ECE3FA47763EF7C89A1472 /* Pods_TransformersCardGame.framework */,
+				765BAE6CD27AFC52B031BAA0 /* Pods_TransformersCardGame_TransformersCardGameTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +126,8 @@
 			children = (
 				CDD99E37FBF7A7E785D708C3 /* Pods-TransformersCardGame.debug.xcconfig */,
 				780AB62F2310A008C94E4111 /* Pods-TransformersCardGame.release.xcconfig */,
+				B0A1CCDF1E16F4246A1E48AE /* Pods-TransformersCardGame-TransformersCardGameTests.debug.xcconfig */,
+				4CFFB07A724B3B06ADEFB64C /* Pods-TransformersCardGame-TransformersCardGameTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -119,6 +137,7 @@
 			children = (
 				FBF3F71A2624DD3800FCB292 /* NetworkService.swift */,
 				FBE611842624E40800336620 /* UserPreferences.swift */,
+				FBE611CE2626368500336620 /* TransformerRepository.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -127,8 +146,17 @@
 			isa = PBXGroup;
 			children = (
 				FBE611AA2624ED7900336620 /* UIView+Ext.swift */,
+				FBE611C926260BD300336620 /* TransformerModel+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FBE611DD262764FC00336620 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBE611DE2627650A00336620 /* TCGInputField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		FBF3F69D2624D5EC00FCB292 = {
@@ -157,6 +185,7 @@
 		FBF3F6A82624D5EC00FCB292 /* TransformersCardGame */ = {
 			isa = PBXGroup;
 			children = (
+				FBE611DD262764FC00336620 /* Components */,
 				FBE611A92624ED6C00336620 /* Extensions */,
 				FBE611832624E3EB00336620 /* Network */,
 				FBF3F70B2624D9CA00FCB292 /* Scenes */,
@@ -218,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF3F70C2624D9CD00FCB292 /* Home */,
+				FBE611D82627633800336620 /* TransformerCreationView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -228,6 +258,7 @@
 				FBF3F70D2624D9DF00FCB292 /* HomeViewModel.swift */,
 				FBF3F7122624D9E900FCB292 /* HomeViewController.swift */,
 				FBE6119C2624EBE600336620 /* HomeView.swift */,
+				FBE611D32627553C00336620 /* HomeViewModelDelegateType.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -258,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF3F6D32624D5ED00FCB292 /* Build configuration list for PBXNativeTarget "TransformersCardGameTests" */;
 			buildPhases = (
+				051BB978CAD596E865F95805 /* [CP] Check Pods Manifest.lock */,
 				FBF3F6B82624D5ED00FCB292 /* Sources */,
 				FBF3F6B92624D5ED00FCB292 /* Frameworks */,
 				FBF3F6BA2624D5ED00FCB292 /* Resources */,
+				8A6263F5C2FC4C99AB93A30B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,6 +394,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		051BB978CAD596E865F95805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransformersCardGame-TransformersCardGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		62CE04A86B694D276F3E38D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +455,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGame/Pods-TransformersCardGame-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8A6263F5C2FC4C99AB93A30B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGame-TransformersCardGameTests/Pods-TransformersCardGame-TransformersCardGameTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGame-TransformersCardGameTests/Pods-TransformersCardGame-TransformersCardGameTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGame-TransformersCardGameTests/Pods-TransformersCardGame-TransformersCardGameTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -411,12 +483,17 @@
 				FBE611B32625FE0100336620 /* TransformerModel.swift in Sources */,
 				FBE611852624E40800336620 /* UserPreferences.swift in Sources */,
 				FBF3F6AA2624D5EC00FCB292 /* AppDelegate.swift in Sources */,
+				FBE611CA26260BD300336620 /* TransformerModel+Ext.swift in Sources */,
 				FBF3F71B2624DD3800FCB292 /* NetworkService.swift in Sources */,
+				FBE611D42627553D00336620 /* HomeViewModelDelegateType.swift in Sources */,
 				FBF3F70E2624D9DF00FCB292 /* HomeViewModel.swift in Sources */,
 				FBE611AB2624ED7900336620 /* UIView+Ext.swift in Sources */,
+				FBE611DF2627650A00336620 /* TCGInputField.swift in Sources */,
 				FBE6119D2624EBE600336620 /* HomeView.swift in Sources */,
+				FBE611CF2626368500336620 /* TransformerRepository.swift in Sources */,
 				FBF3F6E32624D72F00FCB292 /* Coordinator.swift in Sources */,
 				FBF3F7132624D9E900FCB292 /* HomeViewController.swift in Sources */,
+				FBE611D92627633800336620 /* TransformerCreationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +708,7 @@
 		};
 		FBF3F6D42624D5ED00FCB292 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A1CCDF1E16F4246A1E48AE /* Pods-TransformersCardGame-TransformersCardGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,6 +731,7 @@
 		};
 		FBF3F6D52624D5ED00FCB292 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFFB07A724B3B06ADEFB64C /* Pods-TransformersCardGame-TransformersCardGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

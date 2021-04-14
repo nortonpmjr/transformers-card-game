@@ -16,21 +16,6 @@ struct TransformerModel: Codable {
     var firepower: Int
     var skill: Int
     var team: TransformerTeam
-    var id: String
-    var teamIcon: String
-}
-
-extension TransformerModel {
-    public var dictionary: [String: Any] {
-        return ["name": name,
-                "strength": strength,
-                "intelligence": intelligence,
-                "speed": speed,
-                "endurance": endurance,
-                "rank": rank,
-                "courage": courage,
-                "firepower": firepower,
-                "skill": skill,
-                "team": team.rawValue]
-    }
+    var id: String?
+    var teamIcon: String?
 }

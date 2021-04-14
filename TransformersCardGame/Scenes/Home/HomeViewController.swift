@@ -4,10 +4,11 @@ import Moya
 class HomeViewController: UIViewController {
 
     var contentView: HomeView
-    let provider = MoyaProvider<NetworkService>(plugins: [NetworkLoggerPlugin(verbose: true)])
+    let viewModel = HomeViewModel()
 
     init() {
         contentView = HomeView()
+        viewModel.viewDelegate = contentView
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -16,48 +17,19 @@ class HomeViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        view.backgroundColor = .red
+        super.viewDidLoad()
 
+        navigationItem.title = "Transformers Card Game"
         view.addSubview(contentView)
         contentView.bindFrameToSuperviewBounds()
-        getToken()
+        addActions()
     }
 
-    func getToken() {
-        provider.request(.getToken) { result in
-            switch result {
-            case let .success(response):
-                do {
-                    let token = try response.mapString()
-                    self.contentView.JWTValueLabel.text = token
-                    UserPreferences.addKey(token: token)
-                    self.createTransformer()
-                }
-                catch let error {
-                    debugPrint(error)
-                }
-            case let .failure(error):
-                debugPrint(error)
-            }
-        }
-    }
+    private func addActions() {
+        contentView.didTapCreateTransformer = { [weak self] in
+            guard let strongSelf = self else { return }
 
-    func createTransformer() {
-        let transformer: TransformerModel = TransformerModel(name: "Megatron", strength: 10, intelligence: 10, speed: 4, endurance: 8, rank: 10, courage: 9, firepower: 10, skill: 9, team: TransformerTeam.Decepticon)
-        provider.request(.createTransformer(transformer: transformer)) { result in
-            switch result {
-            case let .success(response):
-                do {
-                    let t = try response.mapString()
-                    debugPrint(t)
-                }
-                catch let error {
-                    debugPrint(error)
-                }
-            case let .failure(failure):
-                debugPrint(failure)
-            }
-
+            strongSelf.viewModel.getTransformersList()
         }
     }
 }
