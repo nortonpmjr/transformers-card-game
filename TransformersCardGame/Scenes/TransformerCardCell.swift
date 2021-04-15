@@ -1,5 +1,6 @@
 import UIKit
 import SnapKit
+import Kingfisher
 
 class TransformerCardCell: UITableViewCell {
 
@@ -133,7 +134,26 @@ class TransformerCardCell: UITableViewCell {
         return stackView
     }()
 
+    private let deleteButton: UIButton = {
+        let button = UIButton()
+        let image = UIImage(named: "deleteIcon")
+        button.setImage(image, for: .normal)
+        return button
+    }()
+
+    private let editButton: UIButton = {
+        let button = UIButton()
+        let image = UIImage(named: "editIcon")
+        button.setImage(image, for: .normal)
+        return button
+    }()
+
     var transformer: TransformerModel?
+
+    typealias ActionCallback = (_ transformer: TransformerModel) -> Void
+
+    var wantsToEditCallback: ActionCallback?
+    var wantsToDeleteCallback: ActionCallback?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -145,6 +165,8 @@ class TransformerCardCell: UITableViewCell {
 
     func setupCell() {
         guard let transformer = self.transformer else { return }
+
+        isUserInteractionEnabled = true
 
         nameLabel.text = transformer.name
         strenghtValue.text = transformer.strength.description
@@ -159,6 +181,16 @@ class TransformerCardCell: UITableViewCell {
 
         buildViewHierarchy()
         addConstraints()
+        addActions()
+
+        editButton.isUserInteractionEnabled = true
+        deleteButton.isUserInteractionEnabled = true
+        editButton.contentMode = .scaleAspectFit
+        deleteButton.contentMode = .scaleAspectFit
+
+        guard let imageURL = transformer.teamIcon else { return }
+        let url = URL(string: imageURL)
+        iconImageView.kf.setImage(with: url)
     }
 
     func buildViewHierarchy() {
@@ -188,6 +220,9 @@ class TransformerCardCell: UITableViewCell {
         skillsValueStackView.addArrangedSubview(firepowerValue)
         skillsValueStackView.addArrangedSubview(skillValue)
         skillsValueStackView.addArrangedSubview(overallRatingValue)
+
+        addSubview(deleteButton)
+        addSubview(editButton)
     }
 
     func addConstraints() {
@@ -213,5 +248,33 @@ class TransformerCardCell: UITableViewCell {
             make.top.equalToSuperview().offset(16)
             make.height.width.equalTo(80)
         }
+
+        deleteButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(16)
+            make.width.height.equalTo(16)
+            make.bottom.equalToSuperview().inset(40)
+        }
+
+        editButton.snp.makeConstraints { make in
+            // delete buttont trailing + delete button size + offset
+            make.trailing.equalToSuperview().inset(40)
+            make.width.height.equalTo(16)
+            make.centerY.equalTo(deleteButton.snp.centerY)
+        }
+    }
+
+    func addActions() {
+        editButton.addTarget(self, action: #selector(wantsToEdit), for: .touchUpInside)
+        deleteButton.addTarget(self, action: #selector(wantsToDelete), for: .touchUpInside)
+    }
+
+    @objc func wantsToEdit() {
+        guard let transformer = transformer else { return }
+        wantsToEditCallback?(transformer)
+    }
+
+    @objc func wantsToDelete() {
+        guard let transformer = transformer else { return }
+        wantsToDeleteCallback?(transformer)
     }
 }

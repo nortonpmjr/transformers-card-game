@@ -4,7 +4,9 @@ class UserPreferences {
     static var preferences = UserDefaults.standard
 
     static func addKey(token: String) {
-        preferences.set(token, forKey: "JWT")
+        if preferences.value(forKey: "JWT") == nil {
+            preferences.set(token, forKey: "JWT")
+        }
     }
 
     static func getKey() -> String {

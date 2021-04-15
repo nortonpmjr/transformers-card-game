@@ -16,6 +16,8 @@ extension NetworkService: TargetType {
         switch self {
         case .getToken:
             return "/allspark"
+        case let .deleteTransformer(transformer):
+            return "/transformers/\(transformer.id!)"
         default:
             return "/transformers"
         }

@@ -6,6 +6,7 @@ PODS:
   - iOSSnapshotTestCase/Core (6.1.0)
   - iOSSnapshotTestCase/SwiftSupport (6.1.0):
     - iOSSnapshotTestCase/Core
+  - Kingfisher (6.2.1)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -39,6 +40,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Cuckoo
+  - Kingfisher
   - Moya
   - Nimble
   - Nimble-Snapshots
@@ -53,6 +55,7 @@ SPEC REPOS:
     - Alamofire
     - Cuckoo
     - iOSSnapshotTestCase
+    - Kingfisher
     - Moya
     - Nimble
     - Nimble-Snapshots
@@ -67,6 +70,7 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Cuckoo: 6193c50e46403cc9417aa98752671a2a5ae6f3a6
   iOSSnapshotTestCase: 30d540b0c8feb9d7f8ff97acc25a3804b48ee264
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Nimble: 3864815b4703c7ebffba875973c70e854489fbae
   Nimble-Snapshots: 2ec985281eef0eb9fc69a469deee851363a50d0e
@@ -77,6 +81,6 @@ SPEC CHECKSUMS:
   SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: 652ec7110578c99553709556c1706467bb53fb1a
+PODFILE CHECKSUM: cddfd5a872b116c798a4f8c3a4671b8c0cc63ca1
 
 COCOAPODS: 1.10.1

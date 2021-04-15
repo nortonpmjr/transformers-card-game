@@ -13,7 +13,6 @@
 		FBDFD65E26277F5600A5B586 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD65D26277F5600A5B586 /* Colors.swift */; };
 		FBDFD6892627872B00A5B586 /* TransformerCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */; };
 		FBDFD68E262788C800A5B586 /* TransformerCreationViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD68D262788C800A5B586 /* TransformerCreationViewModelDelegate.swift */; };
-		FBDFD69D2627D1AA00A5B586 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD69C2627D1AA00A5B586 /* Int+Ext.swift */; };
 		FBDFD6A22627DA5E00A5B586 /* TransformerCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6A12627DA5E00A5B586 /* TransformerCardCell.swift */; };
 		FBE611852624E40800336620 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611842624E40800336620 /* UserPreferences.swift */; };
 		FBE6119D2624EBE600336620 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6119C2624EBE600336620 /* HomeView.swift */; };
@@ -67,7 +66,6 @@
 		FBDFD65D26277F5600A5B586 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewModel.swift; sourceTree = "<group>"; };
 		FBDFD68D262788C800A5B586 /* TransformerCreationViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewModelDelegate.swift; sourceTree = "<group>"; };
-		FBDFD69C2627D1AA00A5B586 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		FBDFD6A12627DA5E00A5B586 /* TransformerCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCardCell.swift; sourceTree = "<group>"; };
 		FBE611842624E40800336620 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		FBE6119C2624EBE600336620 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			children = (
 				FBE611AA2624ED7900336620 /* UIView+Ext.swift */,
 				FBE611C926260BD300336620 /* TransformerModel+Ext.swift */,
-				FBDFD69C2627D1AA00A5B586 /* Int+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -530,7 +527,6 @@
 				FBF3F70E2624D9DF00FCB292 /* HomeViewModel.swift in Sources */,
 				FBE611AB2624ED7900336620 /* UIView+Ext.swift in Sources */,
 				FBDE440426276E650057E2E3 /* TransformerCreationViewController.swift in Sources */,
-				FBDFD69D2627D1AA00A5B586 /* Int+Ext.swift in Sources */,
 				FBE611DF2627650A00336620 /* TCGInputField.swift in Sources */,
 				FBE6119D2624EBE600336620 /* HomeView.swift in Sources */,
 				FBE611CF2626368500336620 /* TransformerRepository.swift in Sources */,

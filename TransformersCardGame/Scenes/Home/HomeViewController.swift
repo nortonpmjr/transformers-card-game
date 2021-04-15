@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
         view.addSubview(contentView)
         contentView.bindFrameToSuperviewBounds()
         addActions()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTransformer))
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,5 +39,19 @@ class HomeViewController: UIViewController {
             guard let strongSelf = self else { return }
             strongSelf.wantsToShowCreationView?()
         }
+
+        contentView.wantsToEditCallback = { [weak self] transformer in
+            guard let strongSelf = self else { return }
+            strongSelf.viewModel.editTransformer(transformer)
+        }
+
+        contentView.wantsToDeleteCallback = { [weak self] transformer in
+            guard let strongSelf = self else { return }
+            strongSelf.viewModel.deleteTransformer(transformer)
+        }
+    }
+
+    @objc func addTransformer() {
+        wantsToShowCreationView?()
     }
 }

@@ -48,4 +48,8 @@ extension UIColor {
     class var decepticonPurple: UIColor {
         return UIColor(red: 77.0 / 255.0, green: 71.0 / 255.0, blue: 179.0 / 255.0, alpha: 1)
     }
+
+    class var allSparkBlue: UIColor {
+        return UIColor(red: 157.0 / 255.0, green: 248.0 / 255.0, blue: 249.0 / 255.0, alpha: 1)
+    }
 }

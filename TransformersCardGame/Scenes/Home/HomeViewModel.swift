@@ -23,4 +23,15 @@ class HomeViewModel {
 
         TransformerRepository.shared.getTransformers()
     }
+
+    func deleteTransformer(_ transformer: TransformerModel) {
+        TransformerRepository.shared.deleteTransformer(transformer) { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.getTransformersList()
+        }
+    }
+
+    func editTransformer(_ transformer: TransformerModel) {
+
+    }
 }

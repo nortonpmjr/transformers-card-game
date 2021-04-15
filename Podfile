@@ -12,7 +12,7 @@ target 'TransformersCardGame' do
     pod 'Moya'
     pod 'SnapKit'
     pod 'SwiftLint'
-
+    pod 'Kingfisher'
 
     target 'TransformersCardGameTests' do
         inherit! :search_paths

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "03_ui_user_interface_pencil_edit_write_web_ios-512.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

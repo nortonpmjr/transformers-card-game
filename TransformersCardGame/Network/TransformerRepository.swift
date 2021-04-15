@@ -56,8 +56,6 @@ class TransformerRepository {
                 do {
                     let encoder = JSONDecoder()
                     let t = try encoder.decode(TransformerModel.self, from: response.data)
-//                    self.transformer.id = t.id
-//                    self.transformer.teamIcon = t.teamIcon
                     completion()
                     debugPrint(t)
 
@@ -67,6 +65,17 @@ class TransformerRepository {
                 }
             case let .failure(failure):
                 debugPrint(failure)
+            }
+        }
+    }
+
+    func deleteTransformer(_ transformer: TransformerModel, completion: @escaping () -> Void) {
+        provider.request(.deleteTransformer(transformer: transformer)) { result in
+            switch result {
+            case let .success(response):
+                completion()
+            case let .failure(error):
+                debugPrint(error)
             }
         }
     }
