@@ -2,8 +2,8 @@ import Foundation
 import Moya
 
 class TransformerRepository {
+    static var shared = TransformerRepository()
     let provider: MoyaProvider<NetworkService>
-
     var getTransformersCallback: ((_ transformers: [TransformerModel]) -> Void)?
 
     init() {
@@ -49,7 +49,7 @@ class TransformerRepository {
         }
     }
 
-    func createTransformer(transformer: TransformerModel) {
+    func createTransformer(transformer: TransformerModel, completion: @escaping () -> Void) {
         provider.request(.createTransformer(transformer: transformer)) { result in
             switch result {
             case let .success(response):
@@ -58,6 +58,7 @@ class TransformerRepository {
                     let t = try encoder.decode(TransformerModel.self, from: response.data)
 //                    self.transformer.id = t.id
 //                    self.transformer.teamIcon = t.teamIcon
+                    completion()
                     debugPrint(t)
 
                 }

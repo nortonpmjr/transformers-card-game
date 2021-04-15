@@ -1,10 +1,11 @@
 import UIKit
-import Moya
 
 class HomeViewController: UIViewController {
 
     var contentView: HomeView
     let viewModel = HomeViewModel()
+
+    var wantsToShowCreationView: (() -> Void)?
 
     init() {
         contentView = HomeView()
@@ -25,11 +26,16 @@ class HomeViewController: UIViewController {
         addActions()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        viewModel.getTransformersList()
+    }
+
     private func addActions() {
         contentView.didTapCreateTransformer = { [weak self] in
             guard let strongSelf = self else { return }
-
-            strongSelf.viewModel.getTransformersList()
+            strongSelf.wantsToShowCreationView?()
         }
     }
 }

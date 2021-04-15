@@ -1,0 +1,3 @@
+protocol TransformerCreationViewModelDelegateType {
+    func transformerCreated()
+}

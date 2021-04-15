@@ -3,18 +3,24 @@ import SnapKit
 
 class TCGInputField: UIView {
 
-    let titleLabel: UILabel = {
+    public let titleLabel: UILabel = {
         let label = UILabel()
         return label
     }()
 
-    let inputField: UIInputView = {
-        let inputField = UIInputView()
+    public let inputField: UITextField = {
+        let inputField = UITextField()
+        inputField.layer.cornerRadius = 4
+        inputField.layer.borderWidth = 1
+        inputField.layer.borderColor = UIColor.gray.cgColor
+        inputField.backgroundColor = .grey226
         return inputField
     }()
 
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
+        addSubview(titleLabel)
+        addSubview(inputField)
         addConstraints()
     }
 
@@ -26,11 +32,23 @@ class TCGInputField: UIView {
         titleLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.top.equalToSuperview()
+            make.height.equalTo(32)
         }
 
         inputField.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.top.equalTo(titleLabel.snp.bottom).offset(4)
             make.leading.equalTo(titleLabel.snp.leading)
+            make.trailing.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.height.equalTo(40) 
         }
+    }
+
+    func textInput() -> String {
+        return inputField.text ?? ""
+    }
+
+    func intInput() -> Int {
+        return Int(inputField.text ?? "") ?? 0
     }
 }
