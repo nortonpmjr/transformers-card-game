@@ -1,9 +1,15 @@
 import UIKit
 
+enum ViewType {
+    case create
+    case edit
+}
+
 class TransformerCreationViewController: UIViewController {
 
     var contentView = TransformerCreationView()
     let viewModel = TransformerCreationViewModel()
+    var viewType: ViewType = .create
 
     var wantsToShowHome: (() -> Void)?
     init() {
@@ -17,20 +23,30 @@ class TransformerCreationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(contentView)
-        contentView.bindFrameToSuperviewBounds()
         contentView.maxWidth = Int((view.bounds.size.width - 48) / 3)
+        contentView.bindFrameToSuperviewBounds()
         contentView.setup()
         contentView.layoutIfNeeded()
         viewModel.delegate = contentView
-        navigationItem.title = "Transformer Creation"
-
         addActions()
+        setup()
+    }
+
+    func setup() {
+
+        switch viewType {
+        case .create:
+            navigationItem.title = "Transformer Creation"
+        case .edit:
+//            navigationItem.title = viewModel.transformer.name
+            viewModel.wantsToEdit()
+        }
     }
 
     func addActions() {
         contentView.wantsToCreateTransformer = { [weak self] transformer in
             guard let strongSelf = self else { return }
-            strongSelf.viewModel.createTransformers(transformer)
+            strongSelf.viewType == .create ? strongSelf.viewModel.createTransformers(transformer) : strongSelf.viewModel.editTransformers(transformer)
         }
 
         contentView.wantsToShowHome = { [weak self] in

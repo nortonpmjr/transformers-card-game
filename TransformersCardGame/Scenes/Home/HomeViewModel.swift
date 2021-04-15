@@ -30,8 +30,4 @@ class HomeViewModel {
             strongSelf.getTransformersList()
         }
     }
-
-    func editTransformer(_ transformer: TransformerModel) {
-
-    }
 }

@@ -16,8 +16,8 @@ struct TransformerModel: Codable {
     var firepower: Int = 0
     var skill: Int = 0
     var team: TransformerTeam = .Autobot
-    var id: String?
-    var teamIcon: String?
+    var id: String = ""
+    var teamIcon: String = ""
 
     enum CodingKeys: String, CodingKey {
         case teamIcon = "team_icon"

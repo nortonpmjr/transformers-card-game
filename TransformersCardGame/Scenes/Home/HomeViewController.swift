@@ -6,6 +6,7 @@ class HomeViewController: UIViewController {
     let viewModel = HomeViewModel()
 
     var wantsToShowCreationView: (() -> Void)?
+    var wantsToShowEditViewFor: ((_ transformer: TransformerModel) -> Void)?
 
     init() {
         contentView = HomeView()
@@ -42,7 +43,8 @@ class HomeViewController: UIViewController {
 
         contentView.wantsToEditCallback = { [weak self] transformer in
             guard let strongSelf = self else { return }
-            strongSelf.viewModel.editTransformer(transformer)
+//            strongSelf.viewModel.editTransformer(transformer)
+            strongSelf.wantsToShowEditViewFor?(transformer)
         }
 
         contentView.wantsToDeleteCallback = { [weak self] transformer in

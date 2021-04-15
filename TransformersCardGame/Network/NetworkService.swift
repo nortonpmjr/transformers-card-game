@@ -17,7 +17,7 @@ extension NetworkService: TargetType {
         case .getToken:
             return "/allspark"
         case let .deleteTransformer(transformer):
-            return "/transformers/\(transformer.id!)"
+            return "/transformers/\(transformer.id)"
         default:
             return "/transformers"
         }
@@ -47,9 +47,7 @@ extension NetworkService: TargetType {
         case let .createTransformer(transformer):
             return .requestParameters(parameters: transformer.dictionary, encoding: JSONEncoding.default)
         case let .updateTransformer(transformer):
-            var parameters: [String: Any] = transformer.dictionary
-            parameters["id"] = transformer.id
-            return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
+            return .requestParameters(parameters: transformer.dictionary, encoding: JSONEncoding.default)
         default:
             return .requestPlain
         }

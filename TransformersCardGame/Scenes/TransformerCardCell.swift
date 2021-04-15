@@ -188,7 +188,7 @@ class TransformerCardCell: UITableViewCell {
         editButton.contentMode = .scaleAspectFit
         deleteButton.contentMode = .scaleAspectFit
 
-        guard let imageURL = transformer.teamIcon else { return }
+        let imageURL = transformer.teamIcon
         let url = URL(string: imageURL)
         iconImageView.kf.setImage(with: url)
     }

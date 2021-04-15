@@ -69,6 +69,18 @@ class TransformerRepository {
         }
     }
 
+    func editTransformer(_ transformer: TransformerModel, completion: @escaping () -> Void) {
+        provider.request(.updateTransformer(transformer: transformer)) { result in
+            switch result {
+            case let .success(response):
+                debugPrint(response)
+                completion()
+            case let .failure(error):
+                debugPrint(error)
+            }
+        }
+    }
+
     func deleteTransformer(_ transformer: TransformerModel, completion: @escaping () -> Void) {
         provider.request(.deleteTransformer(transformer: transformer)) { result in
             switch result {

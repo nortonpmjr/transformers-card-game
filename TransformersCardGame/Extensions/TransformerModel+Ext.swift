@@ -10,7 +10,8 @@ extension TransformerModel {
                 "courage": courage,
                 "firepower": firepower,
                 "skill": skill,
-                "team": team.rawValue]
+                "team": team.rawValue,
+                "id": id]
     }
 
     public var overallRating: Int {

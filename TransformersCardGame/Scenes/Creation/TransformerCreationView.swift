@@ -228,4 +228,26 @@ extension TransformerCreationView: TransformerCreationViewModelDelegateType {
     func transformerCreated() {
         wantsToShowHome?()
     }
+
+    func trasnformerToEdit(_ transformer: TransformerModel) {
+        nameInput.inputField.text = transformer.name
+        strengthInput.inputField.text = transformer.strength.description
+        intelligenceInput.inputField.text = transformer.intelligence.description
+        speedInput.inputField.text = transformer.speed.description
+        enduranceInput.inputField.text = transformer.endurance.description
+        rankInput.inputField.text = transformer.rank.description
+        courageInput.inputField.text = transformer.courage.description
+        firepowerInput.inputField.text = transformer.firepower.description
+        skillInput.inputField.text = transformer.skill.description
+
+        selectedTeam = transformer.team
+
+        if selectedTeam == .Autobot {
+            autobotButton.backgroundColor = .autobotRed
+            deceptionButton.backgroundColor = .disabledGrey
+        } else {
+            autobotButton.backgroundColor = .disabledGrey
+            deceptionButton.backgroundColor = .decepticonPurple
+        }
+    }
 }
