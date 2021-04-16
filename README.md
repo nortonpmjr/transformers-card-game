@@ -13,6 +13,10 @@ Reference URL: https://cocoapods.org
 
 ## Install pods
 
-Close the project workspace, open a terminal and navigate to the project root folder and execute the command: pod install
+Open a terminal and navigate to the project folder, and run the following commands
 
-It will install the dependencies, now you can run the project.
+`pod deintegrate`
+
+`pod install`
+
+It will install the dependencies, now you can open the workspace file or type `xed .` in the terminal and run the project
