@@ -102,6 +102,7 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
 
         viewModel.getTransformersList()
+        lottieView.loopMode = .loop
         lottieView.play()
     }
 
@@ -194,7 +195,8 @@ extension HomeViewController: HomeViewModelDelegateType {
             strongSelf.emptyListView.isHidden = transformers.count > 0
             strongSelf.tableView.isHidden = transformers.count <= 0
             strongSelf.battleButton.isHidden = transformers.count <= 0
-            strongSelf.lottieView.isHidden = transformers.count > 0
+            strongSelf.lottieView.isHidden = true
+            strongSelf.lottieView.stop()
         }
         emptyListView.layoutIfNeeded()
         lottieView.layoutIfNeeded()
@@ -209,7 +211,6 @@ extension HomeViewController: HomeViewModelDelegateType {
 
     func finishedBattle(result: BattleResult) {
         battleAnimation.isHidden = false
-//        battleAnimation.loopMode = .repeat()
         battleAnimation.play { [weak self] _ in
             guard let strongSelf = self else { return }
             strongSelf.showResultAlert(result)
