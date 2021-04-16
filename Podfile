@@ -5,26 +5,24 @@ use_frameworks!
 workspace 'TransformersCardGame'
 
 target 'TransformersCardGame' do
-    pod 'Alamofire'
-    pod 'Moya'
-    pod 'SnapKit'
-    pod 'SwiftLint'
-    pod 'Kingfisher'
-    pod 'lottie-ios'
+    pod 'Alamofire', '~> 5.4.2'
+    pod 'Moya', '~> 14.0.0'
+    pod 'SnapKit', '~> 5.0.1'
+    pod 'Kingfisher', '~> 6.2.1'
+    pod 'lottie-ios', '~> 3.2.1'
 
     target 'TransformersCardGameTests' do
         inherit! :search_paths
-        pod 'Cuckoo'
-        pod 'SnapshotTesting'
-        pod 'Quick'
-        pod 'Nimble'
+        pod 'Cuckoo', '~> 1.4.1'
+        pod 'SnapshotTesting', '~> 1.8.1'
+        pod 'Quick', '~> 3.1.2'
+        pod 'Nimble', '~> 9.0.0'
         pod 'Nimble-Snapshots'
-        pod 'OHHTTPStubs/Swift'
+        pod 'OHHTTPStubs/Swift', '~> 9.1.0'
     end
 
     target 'TransformersCardGameUITests' do
         inherit! :search_paths
-        pod 'KIF'
     end
 end
 

@@ -41,10 +41,12 @@ class TransformerRepository {
                 }
                 catch let error {
                     debugPrint(error)
+                    self.getTransformersCallback?([])
                 }
 
             case let .failure(failure):
                     debugPrint(failure)
+                    self.getTransformersCallback?([])
             }
         }
     }

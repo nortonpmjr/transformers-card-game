@@ -13,8 +13,7 @@ class HomeViewModel {
     var transformersUpdatedCallback: (() -> Void)?
 
     init() {
-        TransformerRepository.shared.getToken() // call in another place
-
+        TransformerRepository.shared.getToken()
         transformers = []
     }
 

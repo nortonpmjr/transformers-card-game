@@ -373,7 +373,6 @@
 				FBF3F6C32624D5ED00FCB292 /* Sources */,
 				FBF3F6C42624D5ED00FCB292 /* Frameworks */,
 				FBF3F6C52624D5ED00FCB292 /* Resources */,
-				4255FC30DCE8A002E242174F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -473,23 +472,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGameTests/Pods-TransformersCardGameTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4255FC30DCE8A002E242174F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGameUITests/Pods-TransformersCardGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGameUITests/Pods-TransformersCardGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TransformersCardGameUITests/Pods-TransformersCardGameUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		49802D43CD73E59D606815D1 /* [CP] Check Pods Manifest.lock */ = {

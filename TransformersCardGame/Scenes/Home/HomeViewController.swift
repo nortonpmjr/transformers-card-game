@@ -215,7 +215,6 @@ extension HomeViewController: HomeViewModelDelegateType {
             guard let strongSelf = self else { return }
             strongSelf.showResultAlert(result)
         }
-
     }
 
     private func showResultAlert(_ result: BattleResult) {

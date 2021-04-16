@@ -58,7 +58,7 @@ extension NetworkService: TargetType {
         case .getToken:
             return ["Content-Type": "application/json"]
         default:
-            let token = UserPreferences.getKey()
+            let token = UserPreferences.getKey() ?? ""
             return ["Authorization": "Bearer \(token)",
                     "Content-Type": "application/json"]
         }
