@@ -7,7 +7,7 @@ class TransformerRepository {
     var getTransformersCallback: ((_ transformers: [TransformerModel]) -> Void)?
 
     init() {
-        provider = MoyaProvider<NetworkService>(plugins: [NetworkLoggerPlugin(verbose: true)])
+        provider = MoyaProvider<NetworkService>()
     }
 
     func getToken() {

@@ -19,6 +19,7 @@ final class AppCoordinator {
 
     func createHomeViewController() {
         let vc = HomeViewController()
+
         vc.wantsToShowCreationView = { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.wantsToShowCreationView()

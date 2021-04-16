@@ -12,6 +12,7 @@ class TransformerCreationViewController: UIViewController {
     var viewType: ViewType = .create
 
     var wantsToShowHome: (() -> Void)?
+    
     init() {
         super.init(nibName: nil, bundle: nil)
     }

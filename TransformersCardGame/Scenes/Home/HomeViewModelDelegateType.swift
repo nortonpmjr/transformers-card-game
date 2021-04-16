@@ -1,4 +1,4 @@
 protocol HomeViewModelDelegateType {
     func transformersUpdated(_ transformers: [TransformerModel])
-    func transformerDelete()
+    func finishedBattle(result: BattleResult)
 }

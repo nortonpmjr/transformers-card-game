@@ -34,3 +34,11 @@ struct TransformerModel: Codable {
         case id
     }
 }
+
+extension TransformerModel: Equatable {
+
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.name == rhs.name && lhs.overallRating == rhs.overallRating
+    }
+
+}

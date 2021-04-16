@@ -10,6 +10,9 @@ class UserPreferences {
     }
 
     static func getKey() -> String {
-        return preferences.value(forKey: "JWT") as! String
+        if preferences.value(forKey: "JWT") != nil {
+            return preferences.value(forKey: "JWT") as! String
+        }
+        return ""
     }
 }

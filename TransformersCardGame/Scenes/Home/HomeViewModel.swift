@@ -30,4 +30,10 @@ class HomeViewModel {
             strongSelf.getTransformersList()
         }
     }
+
+    func calculateBattle() {
+        guard transformers.count > 0 else { return }
+        let result = Battleground.shared.startBattle(transformers)
+        viewDelegate?.finishedBattle(result: result)
+    }
 }

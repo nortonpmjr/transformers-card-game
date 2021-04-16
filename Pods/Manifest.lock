@@ -1,41 +1,41 @@
 PODS:
-  - Alamofire (4.8.2)
-  - Cuckoo (1.1.1)
-  - iOSSnapshotTestCase (6.1.0):
-    - iOSSnapshotTestCase/SwiftSupport (= 6.1.0)
-  - iOSSnapshotTestCase/Core (6.1.0)
-  - iOSSnapshotTestCase/SwiftSupport (6.1.0):
+  - Alamofire (5.4.2)
+  - Cuckoo (1.4.1):
+    - Cuckoo/Swift (= 1.4.1)
+  - Cuckoo/Swift (1.4.1)
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
     - iOSSnapshotTestCase/Core
   - Kingfisher (6.2.1)
-  - Moya (13.0.1):
-    - Moya/Core (= 13.0.1)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Nimble (8.1.2)
-  - Nimble-Snapshots (7.1.0):
-    - Nimble-Snapshots/Core (= 7.1.0)
-  - Nimble-Snapshots/Core (7.1.0):
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Nimble (9.0.0)
+  - Nimble-Snapshots (9.1.0):
+    - Nimble-Snapshots/Core (= 9.1.0)
+  - Nimble-Snapshots/Core (9.1.0):
     - iOSSnapshotTestCase (~> 6.0)
-    - Nimble (~> 8.0)
-  - OHHTTPStubs/Core (8.0.0)
-  - OHHTTPStubs/Default (8.0.0):
+    - Nimble
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (8.0.0):
+  - OHHTTPStubs/JSON (9.1.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (8.0.0):
+  - OHHTTPStubs/NSURLSession (9.1.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (8.0.0)
-  - OHHTTPStubs/Swift (8.0.0):
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - OHHTTPStubs/Swift (9.1.0):
     - OHHTTPStubs/Default
   - Quick (3.1.2)
-  - Result (4.1.0)
-  - SnapKit (5.0.0)
-  - SnapshotTesting (1.5.0)
-  - SwiftLint (0.34.0)
+  - SnapKit (5.0.1)
+  - SnapshotTesting (1.8.2)
+  - SwiftLint (0.43.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -61,26 +61,24 @@ SPEC REPOS:
     - Nimble-Snapshots
     - OHHTTPStubs
     - Quick
-    - Result
     - SnapKit
     - SnapshotTesting
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Cuckoo: 6193c50e46403cc9417aa98752671a2a5ae6f3a6
-  iOSSnapshotTestCase: 30d540b0c8feb9d7f8ff97acc25a3804b48ee264
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Nimble: 3864815b4703c7ebffba875973c70e854489fbae
-  Nimble-Snapshots: 2ec985281eef0eb9fc69a469deee851363a50d0e
-  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  Nimble-Snapshots: 6605431525245f967ca9d558bb12a49da3d040e3
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   Quick: 60f0ea3b8e0cfc0df3259a5c06a238ad8b3c46e0
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
-  SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
-  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: cddfd5a872b116c798a4f8c3a4671b8c0cc63ca1
+PODFILE CHECKSUM: ed8e913804a76ddbe0c17c94bd477fe4dfa21d49
 
 COCOAPODS: 1.10.1
