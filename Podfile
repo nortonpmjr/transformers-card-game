@@ -19,6 +19,7 @@ target 'TransformersCardGame' do
         pod 'Nimble'
         pod 'Nimble-Snapshots'
         pod 'OHHTTPStubs/Swift'
+        pod 'SnapshotTesting', '~> 1.8.1'
     end
 end
 

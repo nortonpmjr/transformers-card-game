@@ -45,6 +45,14 @@ class TransformerCreationView: UIView {
         return stackView
     }()
 
+    private let teamStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.spacing = 8
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
+
     // Team Selection
 
     private let teamLabel: UILabel = {
@@ -164,8 +172,9 @@ class TransformerCreationView: UIView {
         thirdRowStackView.addArrangedSubview(skillInput)
 
         addSubview(teamLabel)
-        addSubview(autobotButton)
-        addSubview(deceptionButton)
+        addSubview(teamStackView)
+        teamStackView.addArrangedSubview(autobotButton)
+        teamStackView.addArrangedSubview(deceptionButton)
         addSubview(confirmButton)
     }
 }
@@ -176,7 +185,7 @@ extension TransformerCreationView {
         nameInput.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().inset(16)
-            make.top.equalToSuperview().offset(120)
+            make.top.equalTo(safeAreaLayoutGuide.snp.topMargin).offset(8)
             make.height.equalTo(inputFieldHeight)
         }
         
@@ -192,18 +201,11 @@ extension TransformerCreationView {
             make.height.equalTo(32)
         }
 
-        autobotButton.snp.makeConstraints { make in
+        teamStackView.snp.makeConstraints { make in
             make.top.equalTo(teamLabel.snp.bottom).offset(8)
             make.leading.equalTo(nameInput.snp.leading)
+            make.trailing.equalTo(nameInput.snp.trailing)
             make.height.equalTo(40)
-            make.width.equalTo(maxWidth)
-        }
-
-        deceptionButton.snp.makeConstraints { make in
-            make.leading.equalTo(autobotButton.snp.trailing).offset(8)
-            make.height.equalTo(40)
-            make.width.equalTo(maxWidth)
-            make.centerY.equalTo(autobotButton)
         }
 
         confirmButton.snp.makeConstraints { make in

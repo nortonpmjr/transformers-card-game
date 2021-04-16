@@ -48,6 +48,7 @@ DEPENDENCIES:
   - Quick
   - SnapKit
   - SnapshotTesting
+  - SnapshotTesting (~> 1.8.1)
   - SwiftLint
 
 SPEC REPOS:
@@ -79,6 +80,6 @@ SPEC CHECKSUMS:
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: ed8e913804a76ddbe0c17c94bd477fe4dfa21d49
+PODFILE CHECKSUM: 80fc2883cbb727a1da12e569257f1e9fa0492799
 
 COCOAPODS: 1.10.1
