@@ -148,6 +148,11 @@ class TransformerCardCell: UITableViewCell {
         return button
     }()
 
+    private let parentView: UIView = {
+        let view = UIView()
+        return view
+    }()
+
     var transformer: TransformerModel?
 
     typealias ActionCallback = (_ transformer: TransformerModel) -> Void
@@ -167,6 +172,12 @@ class TransformerCardCell: UITableViewCell {
         guard let transformer = self.transformer else { return }
 
         isUserInteractionEnabled = true
+
+        parentView.layer.cornerRadius = 8
+        parentView.layer.borderWidth = 1
+        parentView.layer.borderColor = UIColor.black.cgColor
+        parentView.clipsToBounds = true
+
 
         nameLabel.text = transformer.name
         strenghtValue.text = transformer.strength.description
@@ -194,12 +205,14 @@ class TransformerCardCell: UITableViewCell {
     }
 
     func buildViewHierarchy() {
-        addSubview(nameLabel)
-        addSubview(iconImageView)
-        addSubview(skillsLabelStackView)
-        addSubview(skillsValueStackView)
-        addSubview(overallRatingLabel)
-        addSubview(overallRatingValue)
+        addSubview(parentView)
+
+        parentView.addSubview(nameLabel)
+        parentView.addSubview(iconImageView)
+        parentView.addSubview(skillsLabelStackView)
+        parentView.addSubview(skillsValueStackView)
+        parentView.addSubview(overallRatingLabel)
+        parentView.addSubview(overallRatingValue)
 
         skillsLabelStackView.addArrangedSubview(strenghtLabel)
         skillsLabelStackView.addArrangedSubview(intelligenceLabel)
@@ -221,11 +234,18 @@ class TransformerCardCell: UITableViewCell {
         skillsValueStackView.addArrangedSubview(skillValue)
         skillsValueStackView.addArrangedSubview(overallRatingValue)
 
-        addSubview(deleteButton)
-        addSubview(editButton)
+        parentView.addSubview(deleteButton)
+        parentView.addSubview(editButton)
     }
 
     func addConstraints() {
+
+        parentView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(16)
+            make.bottom.equalToSuperview().inset(16)
+            make.leading.trailing.equalToSuperview()
+        }
+
         nameLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(16)
             make.leading.equalToSuperview().offset(16)

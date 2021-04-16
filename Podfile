@@ -10,6 +10,7 @@ target 'TransformersCardGame' do
     pod 'SnapKit'
     pod 'SwiftLint'
     pod 'Kingfisher'
+    pod 'lottie-ios'
 
     target 'TransformersCardGameTests' do
         inherit! :search_paths
@@ -19,7 +20,11 @@ target 'TransformersCardGame' do
         pod 'Nimble'
         pod 'Nimble-Snapshots'
         pod 'OHHTTPStubs/Swift'
-        pod 'SnapshotTesting', '~> 1.8.1'
+    end
+
+    target 'TransformersCardGameUITests' do
+        inherit! :search_paths
+        pod 'KIF'
     end
 end
 

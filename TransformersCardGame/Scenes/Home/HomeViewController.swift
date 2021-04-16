@@ -1,5 +1,6 @@
 import UIKit
 import SnapKit
+import Lottie
 
 class HomeViewController: UIViewController {
 
@@ -10,6 +11,7 @@ class HomeViewController: UIViewController {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.lightGray.cgColor
         view.layer.cornerRadius = 4
+        view.isHidden = true
         return view
     }()
 
@@ -28,7 +30,16 @@ class HomeViewController: UIViewController {
         let tableView = UITableView()
         tableView.isHidden = true
         tableView.contentMode = .scaleAspectFit
+        tableView.separatorStyle = .none
         return tableView
+    }()
+
+    private let lottieView: AnimationView = {
+        let animation = AnimationView()
+        animation.contentMode = .scaleAspectFit
+        let startAnimation = Animation.named("robot")
+        animation.animation = startAnimation
+        return animation
     }()
 
     private let battleButton: UIButton = {
@@ -37,6 +48,9 @@ class HomeViewController: UIViewController {
         button.backgroundColor = .autobotRed
         button.setTitleColor(.black, for: .normal)
         button.isHidden = true
+        button.layer.cornerRadius = 4
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
         return button
     }()
 
@@ -81,6 +95,7 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
 
         viewModel.getTransformersList()
+        lottieView.play()
     }
 
     private func addActions() {
@@ -108,6 +123,7 @@ class HomeViewController: UIViewController {
         emptyListView.addSubview(emptyListText)
         view.addSubview(tableView)
         view.addSubview(battleButton)
+        view.addSubview(lottieView)
     }
 
     private func addConstraints() {
@@ -130,11 +146,16 @@ class HomeViewController: UIViewController {
             make.trailing.equalToSuperview().inset(16)
         }
 
+        lottieView.snp.makeConstraints { make in
+            make.centerX.centerY.equalToSuperview()
+            make.width.height.equalTo(120)
+        }
+
         battleButton.snp.makeConstraints { make in
-            make.top.equalTo(tableView.snp.bottom)
+            make.top.equalTo(tableView.snp.bottom).offset(16)
             make.bottom.equalToSuperview().inset(40)
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().inset(16)
             make.height.equalTo(40)
         }
     }
@@ -154,17 +175,16 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomeViewModelDelegateType {
     func transformersUpdated(_ transformers: [TransformerModel]) {
 
-        if transformers.count > 0 {
-            emptyListView.isHidden = true
-            tableView.isHidden = false
-            battleButton.isHidden = false
-        } else {
-            emptyListView.isHidden = false
-            tableView.isHidden = true
-            battleButton.isHidden = true
+        UIView.animate(withDuration: TimeInterval(5)) { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.emptyListView.isHidden = transformers.count > 0
+            strongSelf.tableView.isHidden = transformers.count <= 0
+            strongSelf.battleButton.isHidden = transformers.count <= 0
+            strongSelf.lottieView.isHidden = transformers.count > 0
         }
-
         emptyListView.layoutIfNeeded()
+        lottieView.layoutIfNeeded()
+        tableView.layoutIfNeeded()
         autobotsDataSource = transformers.filter { $0.team == TransformerTeam.Autobot }
         decepticonsDataSource = transformers.filter { $0.team == TransformerTeam.Decepticon }
 
@@ -231,7 +251,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         default:
             return cell
         }
-
+        
         cell.setupCell()
         cell.contentView.isUserInteractionEnabled = false
 

@@ -8,7 +8,11 @@ PODS:
   - iOSSnapshotTestCase/Core (6.2.0)
   - iOSSnapshotTestCase/SwiftSupport (6.2.0):
     - iOSSnapshotTestCase/Core
+  - KIF (3.8.2):
+    - KIF/Core (= 3.8.2)
+  - KIF/Core (3.8.2)
   - Kingfisher (6.2.1)
+  - lottie-ios (3.2.1)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -40,7 +44,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Cuckoo
+  - KIF
   - Kingfisher
+  - lottie-ios
   - Moya
   - Nimble
   - Nimble-Snapshots
@@ -48,15 +54,16 @@ DEPENDENCIES:
   - Quick
   - SnapKit
   - SnapshotTesting
-  - SnapshotTesting (~> 1.8.1)
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - Cuckoo
     - iOSSnapshotTestCase
+    - KIF
     - Kingfisher
+    - lottie-ios
     - Moya
     - Nimble
     - Nimble-Snapshots
@@ -70,7 +77,9 @@ SPEC CHECKSUMS:
   Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
   Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
   iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  KIF: 046e792c00c407316df8a70941851decc877b124
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
   Nimble-Snapshots: 6605431525245f967ca9d558bb12a49da3d040e3
@@ -80,6 +89,6 @@ SPEC CHECKSUMS:
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 80fc2883cbb727a1da12e569257f1e9fa0492799
+PODFILE CHECKSUM: 899d2345d9821030a9f4b879527d87501c227c85
 
 COCOAPODS: 1.10.1

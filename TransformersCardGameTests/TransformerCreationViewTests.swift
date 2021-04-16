@@ -1,3 +1,4 @@
+// This is an example snapshot testing
 import Quick
 import Nimble
 import Nimble_Snapshots
