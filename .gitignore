@@ -32,4 +32,5 @@ DerivedData/
 
 # Cocoapods
 Pods/
+Podfile.lock
 
