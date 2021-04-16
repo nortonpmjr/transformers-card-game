@@ -5,9 +5,9 @@ use_frameworks!
 workspace 'TransformersCardGame'
 
 target 'TransformersCardGame' do
-    pod 'Alamofire', '~> 5.4.2'
-    pod 'Moya', '~> 14.0.0'
-    pod 'SnapKit', '~> 5.0.1'
+    pod 'Alamofire', '~> 4.1'
+    pod 'Moya', '~> 12.0.0'
+    pod 'SnapKit', '~> 4.0'
     pod 'Kingfisher', '~> 6.2.1'
     pod 'lottie-ios', '~> 3.2.1'
 
