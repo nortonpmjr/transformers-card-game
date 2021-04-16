@@ -11,6 +11,7 @@
 		9EB6EF9D67125834600948D4 /* Pods_TransformersCardGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472ECC9E1E36190682A21429 /* Pods_TransformersCardGame.framework */; };
 		D03A0C848C13E7769C713B44 /* Pods_TransformersCardGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD521715D0407E92BA19C013 /* Pods_TransformersCardGameUITests.framework */; };
 		FBC7DB3D2629FA0E002CA9B7 /* robot.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC7DB3C2629FA0E002CA9B7 /* robot.json */; };
+		FBC7DB4E262A0757002CA9B7 /* chatbot.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC7DB4D262A0757002CA9B7 /* chatbot.json */; };
 		FBDE440426276E650057E2E3 /* TransformerCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDE440326276E650057E2E3 /* TransformerCreationViewController.swift */; };
 		FBDFD65E26277F5600A5B586 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD65D26277F5600A5B586 /* Colors.swift */; };
 		FBDFD6892627872B00A5B586 /* TransformerCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */; };
@@ -66,6 +67,7 @@
 		DE3BF6D731631A7797F36ABD /* Pods-TransformersCardGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersCardGameUITests.release.xcconfig"; path = "Target Support Files/Pods-TransformersCardGameUITests/Pods-TransformersCardGameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DE2DDA260A9FA33CAF68F0 /* Pods-TransformersCardGame-TransformersCardGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersCardGame-TransformersCardGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-TransformersCardGame-TransformersCardGameUITests/Pods-TransformersCardGame-TransformersCardGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC7DB3C2629FA0E002CA9B7 /* robot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = robot.json; sourceTree = "<group>"; };
+		FBC7DB4D262A0757002CA9B7 /* chatbot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatbot.json; sourceTree = "<group>"; };
 		FBDE440326276E650057E2E3 /* TransformerCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewController.swift; sourceTree = "<group>"; };
 		FBDFD65D26277F5600A5B586 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewModel.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		FBDFD65C26277F4A00A5B586 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FBC7DB4D262A0757002CA9B7 /* chatbot.json */,
 				FBC7DB3C2629FA0E002CA9B7 /* robot.json */,
 				FBF3F6AF2624D5EC00FCB292 /* Main.storyboard */,
 				FBF3F6B22624D5ED00FCB292 /* Assets.xcassets */,
@@ -434,6 +437,7 @@
 				FBF3F7202624DF4D00FCB292 /* Podfile in Resources */,
 				FBC7DB3D2629FA0E002CA9B7 /* robot.json in Resources */,
 				FBF3F6B12624D5EC00FCB292 /* Main.storyboard in Resources */,
+				FBC7DB4E262A0757002CA9B7 /* chatbot.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

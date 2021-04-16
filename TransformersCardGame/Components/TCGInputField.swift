@@ -73,7 +73,6 @@ extension TCGInputField: UITextFieldDelegate {
         if intText <= 0 || intText > 10 {
             inputField.text = ""
             delegate?.showAlert("Attribute fields should be between 1 and 10")
-            return false
         }
 
         return true

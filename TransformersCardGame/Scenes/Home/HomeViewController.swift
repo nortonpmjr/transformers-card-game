@@ -42,15 +42,22 @@ class HomeViewController: UIViewController {
         return animation
     }()
 
+    private let battleAnimation: AnimationView = {
+        let view = AnimationView()
+        view.contentMode = .scaleAspectFit
+        let animation = Animation.named("chatbot")
+        view.animation = animation
+        view.isHidden = true
+        return view
+    }()
+
     private let battleButton: UIButton = {
         let button = UIButton()
         button.setTitle("Battle", for: .normal)
-        button.backgroundColor = .autobotRed
-        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .successGreen
+        button.setTitleColor(.white, for: .normal)
         button.isHidden = true
         button.layer.cornerRadius = 4
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
         return button
     }()
 
@@ -124,6 +131,7 @@ class HomeViewController: UIViewController {
         view.addSubview(tableView)
         view.addSubview(battleButton)
         view.addSubview(lottieView)
+        view.addSubview(battleAnimation)
     }
 
     private func addConstraints() {
@@ -157,6 +165,12 @@ class HomeViewController: UIViewController {
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().inset(16)
             make.height.equalTo(40)
+        }
+
+        battleAnimation.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(120)
         }
     }
 
@@ -194,6 +208,17 @@ extension HomeViewController: HomeViewModelDelegateType {
     }
 
     func finishedBattle(result: BattleResult) {
+        battleAnimation.isHidden = false
+//        battleAnimation.loopMode = .repeat()
+        battleAnimation.play { [weak self] _ in
+            guard let strongSelf = self else { return }
+            strongSelf.showResultAlert(result)
+        }
+
+    }
+
+    private func showResultAlert(_ result: BattleResult) {
+        battleAnimation.isHidden = true
         let winninegTeam = result.winningTeam == TransformerTeam.Autobot ? result.autobotSurvivors : result.decepticonSurvivors
         let winninegTeamString = winninegTeam.map { $0.name }.joined(separator: ",")
 
