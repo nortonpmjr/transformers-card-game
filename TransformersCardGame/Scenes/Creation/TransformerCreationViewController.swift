@@ -39,7 +39,6 @@ class TransformerCreationViewController: UIViewController {
         case .create:
             navigationItem.title = "Transformer Creation"
         case .edit:
-//            navigationItem.title = viewModel.transformer.name
             viewModel.wantsToEdit()
         }
     }
@@ -53,6 +52,13 @@ class TransformerCreationViewController: UIViewController {
         contentView.wantsToShowHome = { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.wantsToShowHome?()
+        }
+
+        contentView.wantsToShowAlert = { [weak self] message in
+            guard let strongSelf = self else { return }
+            let alertView = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .cancel))
+            strongSelf.present(alertView, animated: true)
         }
 
         initHideKeyboard()

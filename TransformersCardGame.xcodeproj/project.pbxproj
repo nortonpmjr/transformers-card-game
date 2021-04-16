@@ -12,7 +12,6 @@
 		FBDE440426276E650057E2E3 /* TransformerCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDE440326276E650057E2E3 /* TransformerCreationViewController.swift */; };
 		FBDFD65E26277F5600A5B586 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD65D26277F5600A5B586 /* Colors.swift */; };
 		FBDFD6892627872B00A5B586 /* TransformerCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */; };
-		FBDFD68E262788C800A5B586 /* TransformerCreationViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD68D262788C800A5B586 /* TransformerCreationViewModelDelegate.swift */; };
 		FBDFD6A22627DA5E00A5B586 /* TransformerCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6A12627DA5E00A5B586 /* TransformerCardCell.swift */; };
 		FBDFD6BF2628B6F400A5B586 /* Battleground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6BE2628B6F300A5B586 /* Battleground.swift */; };
 		FBDFD6C42628C91000A5B586 /* BattlegroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFD6C32628C90F00A5B586 /* BattlegroundTests.swift */; };
@@ -21,7 +20,6 @@
 		FBE611B32625FE0100336620 /* TransformerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611B22625FE0100336620 /* TransformerModel.swift */; };
 		FBE611CA26260BD300336620 /* TransformerModel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611C926260BD300336620 /* TransformerModel+Ext.swift */; };
 		FBE611CF2626368500336620 /* TransformerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611CE2626368500336620 /* TransformerRepository.swift */; };
-		FBE611D42627553D00336620 /* HomeViewModelDelegateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611D32627553C00336620 /* HomeViewModelDelegateType.swift */; };
 		FBE611D92627633800336620 /* TransformerCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611D82627633800336620 /* TransformerCreationView.swift */; };
 		FBE611DF2627650A00336620 /* TCGInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611DE2627650A00336620 /* TCGInputField.swift */; };
 		FBE611F8262768B100336620 /* TransformerCreationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE611F7262768B100336620 /* TransformerCreationViewTests.swift */; };
@@ -65,7 +63,6 @@
 		FBDE440326276E650057E2E3 /* TransformerCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewController.swift; sourceTree = "<group>"; };
 		FBDFD65D26277F5600A5B586 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewModel.swift; sourceTree = "<group>"; };
-		FBDFD68D262788C800A5B586 /* TransformerCreationViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewModelDelegate.swift; sourceTree = "<group>"; };
 		FBDFD6A12627DA5E00A5B586 /* TransformerCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCardCell.swift; sourceTree = "<group>"; };
 		FBDFD6BE2628B6F300A5B586 /* Battleground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battleground.swift; sourceTree = "<group>"; };
 		FBDFD6C32628C90F00A5B586 /* BattlegroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlegroundTests.swift; sourceTree = "<group>"; };
@@ -81,7 +78,6 @@
 		FBE611B22625FE0100336620 /* TransformerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerModel.swift; sourceTree = "<group>"; };
 		FBE611C926260BD300336620 /* TransformerModel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformerModel+Ext.swift"; sourceTree = "<group>"; };
 		FBE611CE2626368500336620 /* TransformerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerRepository.swift; sourceTree = "<group>"; };
-		FBE611D32627553C00336620 /* HomeViewModelDelegateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegateType.swift; sourceTree = "<group>"; };
 		FBE611D82627633800336620 /* TransformerCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationView.swift; sourceTree = "<group>"; };
 		FBE611DE2627650A00336620 /* TCGInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGInputField.swift; sourceTree = "<group>"; };
 		FBE611F7262768B100336620 /* TransformerCreationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCreationViewTests.swift; sourceTree = "<group>"; };
@@ -166,7 +162,6 @@
 				FBE611D82627633800336620 /* TransformerCreationView.swift */,
 				FBDE440326276E650057E2E3 /* TransformerCreationViewController.swift */,
 				FBDFD6882627872B00A5B586 /* TransformerCreationViewModel.swift */,
-				FBDFD68D262788C800A5B586 /* TransformerCreationViewModelDelegate.swift */,
 			);
 			path = Creation;
 			sourceTree = "<group>";
@@ -299,6 +294,7 @@
 				FBDE440226276E450057E2E3 /* Creation */,
 				FBF3F70C2624D9CD00FCB292 /* Home */,
 				FBDFD6A12627DA5E00A5B586 /* TransformerCardCell.swift */,
+				FBDFD6BE2628B6F300A5B586 /* Battleground.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -308,8 +304,6 @@
 			children = (
 				FBF3F70D2624D9DF00FCB292 /* HomeViewModel.swift */,
 				FBF3F7122624D9E900FCB292 /* HomeViewController.swift */,
-				FBE611D32627553C00336620 /* HomeViewModelDelegateType.swift */,
-				FBDFD6BE2628B6F300A5B586 /* Battleground.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -530,7 +524,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDFD68E262788C800A5B586 /* TransformerCreationViewModelDelegate.swift in Sources */,
 				FBF3F6E82624D74B00FCB292 /* AppCoordinator.swift in Sources */,
 				FBE611B32625FE0100336620 /* TransformerModel.swift in Sources */,
 				FBE611852624E40800336620 /* UserPreferences.swift in Sources */,
@@ -539,7 +532,6 @@
 				FBDFD6892627872B00A5B586 /* TransformerCreationViewModel.swift in Sources */,
 				FBE611CA26260BD300336620 /* TransformerModel+Ext.swift in Sources */,
 				FBF3F71B2624DD3800FCB292 /* NetworkService.swift in Sources */,
-				FBE611D42627553D00336620 /* HomeViewModelDelegateType.swift in Sources */,
 				FBDFD6A22627DA5E00A5B586 /* TransformerCardCell.swift in Sources */,
 				FBF3F70E2624D9DF00FCB292 /* HomeViewModel.swift in Sources */,
 				FBE611AB2624ED7900336620 /* UIView+Ext.swift in Sources */,

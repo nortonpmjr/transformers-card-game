@@ -1,6 +1,15 @@
 import UIKit
 import SnapKit
 
+enum inputFieldType {
+    case text
+    case number
+}
+
+protocol TCGInputFieldDelegate {
+    func showAlert(_ message: String)
+}
+
 class TCGInputField: UIView {
 
     public let titleLabel: UILabel = {
@@ -17,11 +26,15 @@ class TCGInputField: UIView {
         return inputField
     }()
 
+    var inputType: inputFieldType = .number
+    var delegate: TCGInputFieldDelegate?
+
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         addSubview(titleLabel)
         addSubview(inputField)
         addConstraints()
+        inputField.delegate = self
     }
 
     required init?(coder: NSCoder) {
@@ -50,5 +63,19 @@ class TCGInputField: UIView {
 
     func intInput() -> Int {
         return Int(inputField.text ?? "") ?? 0
+    }
+}
+
+extension TCGInputField: UITextFieldDelegate {
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        guard inputType == .number else { return true }
+        let intText = Int(textField.text ?? "") ?? 0
+        if intText <= 0 || intText > 10 {
+            inputField.text = ""
+            delegate?.showAlert("Attribute fields should be between 1 and 10")
+            return false
+        }
+
+        return true
     }
 }

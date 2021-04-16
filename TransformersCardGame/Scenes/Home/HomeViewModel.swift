@@ -1,7 +1,11 @@
 import Foundation
 
-class HomeViewModel {
+protocol HomeViewModelDelegateType {
+    func transformersUpdated(_ transformers: [TransformerModel])
+    func finishedBattle(result: BattleResult)
+}
 
+class HomeViewModel {
 
     var transformers: [TransformerModel]
     var viewDelegate: HomeViewModelDelegateType?

@@ -83,6 +83,7 @@ class TransformerCreationView: UIView {
     // Actions
     public var wantsToCreateTransformer: ((_ transformer: TransformerModel) -> Void)?
     public var wantsToShowHome: (() -> Void)?
+    public var wantsToShowAlert: ((_ message: String) -> Void)?
 
     private let inputFieldHeight = 72
     public var maxWidth: Int = 0
@@ -108,30 +109,40 @@ class TransformerCreationView: UIView {
 
     private func setupInputs() {
         nameInput.titleLabel.text = "Name"
+        nameInput.inputType = .text
+        nameInput.delegate = self
 
         strengthInput.titleLabel.text = "Strenght"
         strengthInput.inputField.keyboardType = .numberPad
+        strengthInput.delegate = self
 
         intelligenceInput.titleLabel.text = "Intelligence"
         intelligenceInput.inputField.keyboardType = .numberPad
+        intelligenceInput.delegate = self
 
         speedInput.titleLabel.text = "Speed"
         speedInput.inputField.keyboardType = .numberPad
+        speedInput.delegate = self
 
         enduranceInput.titleLabel.text = "Endurance"
         enduranceInput.inputField.keyboardType = .numberPad
+        enduranceInput.delegate = self
 
         rankInput.titleLabel.text = "Rank"
         rankInput.inputField.keyboardType = .numberPad
+        rankInput.delegate = self
 
         courageInput.titleLabel.text = "Courage"
         courageInput.inputField.keyboardType = .numberPad
+        courageInput.delegate = self
 
         firepowerInput.titleLabel.text = "Firepower"
         firepowerInput.inputField.keyboardType = .numberPad
+        firepowerInput.delegate = self
 
         skillInput.titleLabel.text = "Skill"
         skillInput.inputField.keyboardType = .numberPad
+        skillInput.delegate = self
     }
 
     private func buildViewHierarchy() {
@@ -249,5 +260,11 @@ extension TransformerCreationView: TransformerCreationViewModelDelegateType {
             autobotButton.backgroundColor = .disabledGrey
             deceptionButton.backgroundColor = .decepticonPurple
         }
+    }
+}
+
+extension TransformerCreationView: TCGInputFieldDelegate {
+    func showAlert(_ message: String) {
+        wantsToShowAlert?(message)
     }
 }

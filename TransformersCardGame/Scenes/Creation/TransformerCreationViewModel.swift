@@ -1,14 +1,14 @@
 import Foundation
 
+protocol TransformerCreationViewModelDelegateType {
+    func transformerCreated()
+    func trasnformerToEdit(_ transformer: TransformerModel)
+}
+
 class TransformerCreationViewModel {
 
     var delegate: TransformerCreationViewModelDelegateType?
-    var transformer: TransformerModel? {
-        willSet {
-            debugPrint(transformer)
-        }
-    }
-
+    var transformer: TransformerModel?
     init() {}
 
     func createTransformers(_ transformer: TransformerModel) {
